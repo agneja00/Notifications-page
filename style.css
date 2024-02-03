@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main__wrapper {
+  padding: 1.5rem 1rem;
+}
+
+.main__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+
+.main__header-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.main__header-notifications {
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(219deg, 85%, 26%);
+  padding: 0.2rem 0.7rem;
+  margin-left: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.main__header-btn {
+  font-size: 1rem;
+  color: hsl(219deg, 85%, 26%);
+  background-color: hsl(0deg, 0%, 100%);
+  border: none;
+  cursor: pointer;
+}
+
+.main .notification {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 0.9rem;
+  cursor: pointer;
+}
+
+.main .notification.unread {
+  background-color: hsl(210deg, 60%, 98%);
+  border-radius: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.main .notification__img {
+  height: 2.5rem;
+}
+
+.main .notification__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.main .notification__message {
+  color: hsl(219deg, 12%, 42%);
+}
+
+.main .notification__user {
+  font-weight: 800;
+  color: hsl(224deg, 21%, 14%);
+  margin-right: 0.2rem;
+}
+
+.main .notification__user:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+
+.main .notification__time {
+  color: hsl(219deg, 14%, 63%);
+}
+
+.main .notification__post {
+  font-weight: 800;
+  color: hsl(219deg, 12%, 42%);
+  margin-left: 0.2rem;
+}
+
+.main .notification__post--blue {
+  color: hsl(219deg, 85%, 26%);
+}
+
+.main .notification__post-img {
+  width: 2.5rem;
+}
+
+.main .notification__post--bordered {
+  font-weight: 500;
+  border: 1px hsl(211deg, 68%, 94%) solid;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.main .notification__post--bordered:hover {
+  background-color: hsl(211deg, 68%, 94%);
+}
+
+.main .notification__post:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+
+.main .notification__dot {
+  display: inline-block;
+  background: hsl(1deg, 90%, 64%);
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin-left: 0.2rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    background-color: hsl(210deg, 60%, 98%);
+  }
+
+  .main {
+    align-items: center;
+  }
+
+  .main__wrapper {
+    background-color: hsl(0deg, 0%, 100%);
+    width: 50%;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px 0 hsla(0deg, 3%, 6%, 0), 0 0 15px 4px hsla(0deg, 0%, 0%, 0.1);
+    margin: 5rem 0;
+    padding: 1.5rem 2rem;
+  }
+
+  .notification__post--right {
+    margin-left: auto !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

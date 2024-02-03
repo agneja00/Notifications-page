@@ -1,0 +1,135 @@
+@import "variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__wrapper {
+    padding: 1.5rem 1rem;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+
+    &-title {
+      font-size: 1.2rem;
+      font-weight: $font-weight-bold;
+    }
+
+    &-notifications {
+      font-size: 1rem;
+      font-weight: $font-weight;
+      color: $background-color-secondary;
+      background-color: $primary-color;
+      padding: 0.2rem 0.7rem;
+      margin-left: 0.5rem;
+      border-radius: 0.3rem;
+    }
+
+    &-btn {
+      font-size: 1rem;
+      color: $primary-color;
+      background-color: $background-color-secondary;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .notification {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 0.9rem;
+    cursor: pointer;
+
+    &.unread {
+      background-color: $background-color-primary;
+      border-radius: 0.5rem;
+      margin-top: 0.8rem;
+    }
+
+    &__img {
+      height: 2.5rem;
+    }
+
+    &__text-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    &__message {
+      color: $text-color-primary;
+    }
+
+    &__user {
+      font-weight: $font-weight-bold;
+      color: hsl(224, 21%, 14%);
+      margin-right: 0.2rem;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    &__time {
+      color: $text-color-secondary;
+    }
+
+    &__post {
+      font-weight: $font-weight-bold;
+      color: $text-color-primary;
+      margin-left: 0.2rem;
+
+      &--blue {
+        color: $primary-color;
+      }
+
+      &-img {
+        width: 2.5rem;
+      }
+
+      &--bordered {
+        font-weight: $font-weight;
+        border: 1px hsl(211, 68%, 94%) solid;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-top: 0.5rem;
+
+        &:hover {
+          background-color: hsl(211, 68%, 94%);
+        }
+      }
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    &__dot {
+      display: inline-block;
+      background: hsl(1, 90%, 64%);
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      margin-left: 0.2rem;
+    }
+  }
+}
+
+@import "mediaQuories.scss";

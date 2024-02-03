@@ -1,0 +1,29 @@
+@import "variables.scss";
+
+@media only screen and (min-width: 1440px) {
+  body {
+    background-color: $background-color-primary;
+  }
+
+  .main {
+    align-items: center;
+
+    &__wrapper {
+      background-color: $background-color-secondary;
+      width: 50%;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px 0 hsla(0, 3%, 6%, 0),
+        0 0 15px 4px hsla(0, 0%, 0%, 0.1);
+      margin: 5rem 0;
+      padding: 1.5rem 2rem;
+    }
+  }
+
+  .notification {
+    &__post {
+      &--right {
+        margin-left: auto !important;
+      }
+    }
+  }
+}
